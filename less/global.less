@@ -48,7 +48,12 @@ p {
 
 img {
     max-width: 100%;
-    height: auto;
+    transition: 250ms;
+
+    &:hover {
+        .drop-shadow
+            (@x: 0, @y: 13px, @blur: 34px, @spread: -16px, @alpha: 0.75);
+    }
 }
 
 .container {
