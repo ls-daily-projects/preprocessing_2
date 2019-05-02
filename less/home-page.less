@@ -65,6 +65,25 @@
     border-bottom: 2px dashed @navigation-border;
     padding: 2rem 8rem;
 
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    &-logo {
+        display: block;
+        @media @mobile {
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            @media @mobile {
+                font-size: 3.2rem;
+            }
+        }
+    }
+
     .nav {
         display: flex;
         justify-content: space-between;
@@ -77,6 +96,10 @@
         font-size: 1.4rem;
         padding: 1rem;
         margin: auto 2rem;
+
+        @media @mobile {
+            padding: 0;
+        }
 
         &:after {
             content: "";
